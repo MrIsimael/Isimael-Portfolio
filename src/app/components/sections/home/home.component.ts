@@ -15,7 +15,7 @@ declare let require: any;
         useAnimation(bounceIn, {
           // Set the duration to 5seconds and delay to 2seconds
           params: {
-            timing: 3,
+            timing: 4,
             delay: 0,
             a: '3000px',
             b: '-25px',
@@ -33,7 +33,7 @@ export class HomeComponent implements OnInit, AfterContentInit {
 
   constructor() {
     setInterval(() => {
-      this.bounce = this.bounce < 3 ? this.bounce + 1 : 1;
+      this.bounce = this.bounce < 2 ? this.bounce + 1 : 1;
     }, 3000);
   }
 
